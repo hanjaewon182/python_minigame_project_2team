@@ -17,11 +17,11 @@ python main.py
 
 | 역할 | 이름 | GitHub ID | 담당 |
 |---|---|---|---|
-| A | | | 팀장 · `main.py`, `utils.py`, README, 병합 관리 |
+| A | 한재원 | hanjaewon182 | 팀장 · `main.py`, `utils.py`, README, 병합 관리 |
 | B | | | `games/hangman.py` (행맨) |
 | C | | | `games/baseball.py` (숫자 야구) |
 | D | | | `games/rps.py` (가위바위보) |
-| E | | | `games/tictactoe.py` (틱택토) |
+| E | 한재원 | hanjaewon182 | `games/tictactoe.py` (틱택토) |
 
 ## 게임 목록
 
@@ -30,7 +30,7 @@ python main.py
 | 행맨 | | 🚧 |
 | 숫자 야구 | | 🚧 |
 | 가위바위보 | | 🚧 |
-| 틱택토 | | 🚧 |
+| 틱택토 | 칸 번호(1~9)로 X·O를 번갈아 놓아 한 줄을 먼저 완성하면 승리 | ✅ |
 
 ## 협업 규칙
 
