@@ -23,3 +23,13 @@ def ask_yes_no(prompt: str) -> bool:
         if raw in ("n", "no"):
             return False
         print("y 또는 n 으로 입력하세요.")
+
+
+def ask_choice(prompt: str, choices: list[str]) -> str:
+    """choices 중 하나가 입력될 때까지 반복해서 묻는다(대소문자 무시)."""
+    lowered = [c.lower() for c in choices]
+    while True:
+        raw = input(f"{prompt} ({'/'.join(choices)}): ").strip().lower()
+        if raw in lowered:
+            return choices[lowered.index(raw)]
+        print(f"{', '.join(choices)} 중 하나를 입력하세요.")
