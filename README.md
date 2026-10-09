@@ -19,7 +19,7 @@ python main.py
 |---|---|---|---|
 | A | | | 팀장 · `main.py`, `utils.py`, README, 병합 관리 |
 | B | | | `games/hangman.py` (행맨) |
-| C | | | `games/baseball.py` (숫자 야구) |
+| C | 이민서 | minseo9904 | `games/baseball.py` (숫자 야구) |
 | D | | | `games/rps.py` (가위바위보) |
 | E | | | `games/tictactoe.py` (틱택토) |
 
@@ -28,7 +28,7 @@ python main.py
 | 게임 | 설명 | 상태 |
 |---|---|---|
 | 행맨 | | 🚧 |
-| 숫자 야구 | | 🚧 |
+| 숫자 야구 | 서로 다른 숫자 3개를 최대 9번에 맞히는 게임 | ✅ 완료 |
 | 가위바위보 | | 🚧 |
 | 틱택토 | | 🚧 |
 
