@@ -3,7 +3,7 @@
 import random
 
 GAME_NAME = "가위바위보"
-CHOICES = {"1": "Scissors", "2": "Rock", "3": "Paper"}
+CHOICES = {"1": "가위", "2": "바위", "3": "보"}
 
 
 def decide(player: str, computer: str) -> str:
@@ -28,38 +28,38 @@ def play() -> None:
     player_score = 0
     computer_score = 0
 
-    print("\n[Rock-Paper-Scissors] First to 2 wins!")
-    print("Draws do not count. Enter q to return to the menu.")
+    print(f"\n[{GAME_NAME}] 먼저 2승을 하면 승리합니다!")
+    print("무승부는 점수에 포함되지 않습니다. q를 입력하면 메뉴로 돌아갑니다.")
 
     while player_score < 2 and computer_score < 2:
-        player = input("\n1: Scissors / 2: Rock / 3: Paper / q: Quit > ").strip()
+        player = input("\n1: 가위 / 2: 바위 / 3: 보 / q: 종료 > ").strip()
 
         if player.lower() == "q":
-            print("Returning to the menu.")
+            print("메인 메뉴로 돌아갑니다.")
             return
 
         if player not in CHOICES:
-            print("Invalid input! Please enter 1, 2, 3, or q.")
+            print("잘못된 입력입니다! 1, 2, 3 또는 q를 입력하세요.")
             continue
 
         computer = random.choice(list(CHOICES))
 
-        print(f"You: {CHOICES[player]} / Computer: {CHOICES[computer]}")
+        print(f"나: {CHOICES[player]} / 컴퓨터: {CHOICES[computer]}")
 
         result = decide(player, computer)
 
         if result == "win":
             player_score += 1
-            print("You won this round!")
+            print("이번 판에서 이겼습니다!")
         elif result == "lose":
             computer_score += 1
-            print("You lost this round!")
+            print("이번 판에서 졌습니다!")
         else:
-            print("Draw! Play again.")
+            print("무승부입니다! 다시 진행합니다.")
 
-        print(f"Score: You {player_score} - Computer {computer_score}")
+        print(f"점수: 나 {player_score} - 컴퓨터 {computer_score}")
 
     if player_score == 2:
-        print("\nYou won the match!")
+        print("\n최종 승리했습니다!")
     else:
-        print("\nComputer won the match!")
+        print("\n컴퓨터가 최종 승리했습니다!")
