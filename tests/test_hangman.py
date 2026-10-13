@@ -64,4 +64,3 @@ def test_play_lose_with_bad_inputs(monkeypatch, capsys):
     monkeypatch.setattr("builtins.input", lambda _: next(inputs))
     hangman.play()
     assert "실패" in capsys.readouterr().out
-
