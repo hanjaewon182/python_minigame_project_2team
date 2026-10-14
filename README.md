@@ -20,7 +20,7 @@ python main.py
 | A | | | 팀장 · `main.py`, `utils.py`, README, 병합 관리 |
 | B | | | `games/hangman.py` (행맨) |
 | C | | | `games/baseball.py` (숫자 야구) |
-| D | | | `games/rps.py` (가위바위보) |
+| D | Manvika | themanvika | `games/rps.py` (가위바위보) |
 | E | | | `games/tictactoe.py` (틱택토) |
 
 ## 게임 목록
@@ -29,7 +29,7 @@ python main.py
 |---|---|---|
 | 행맨 | | 🚧 |
 | 숫자 야구 | | 🚧 |
-| 가위바위보 | | 🚧 |
+| 가위바위보 | Rock-paper-scissors against the computer; first to 2 wins | ✅ |
 | 틱택토 | | 🚧 |
 
 ## 협업 규칙
