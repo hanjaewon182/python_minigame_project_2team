@@ -29,7 +29,7 @@ python main.py
 |---|---|---|
 | 행맨 | | 🚧 |
 | 숫자 야구 | | 🚧 |
-| 가위바위보 | Rock-paper-scissors against the computer; first to 2 wins | ✅ |
+| 가위바위보 | 컴퓨터와 3판 2선승제 대결 | ✅ |
 | 틱택토 | | 🚧 |
 
 ## 협업 규칙
