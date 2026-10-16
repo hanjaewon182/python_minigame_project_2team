@@ -24,7 +24,6 @@ def decide(player: str, computer: str) -> str:
 
 
 def play() -> None:
-    """Play until either side wins twice, then return to the menu."""
     player_score = 0
     computer_score = 0
 
